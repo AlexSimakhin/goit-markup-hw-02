@@ -63,7 +63,7 @@ a {
 button,
 a {
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  /* transition: color 0.3s ease, background-color 0.3s ease; */
 }
 
 /* Styles */
@@ -89,21 +89,27 @@ a {
   font-weight: 500;
   color: #2e2f42;
 }
+.nav__link:hover {
+  color: #404bbf;
+}
+.nav__link:focus {
+  color: #404bbf;
+}
 
 .contacts {
   font-style: normal;
 }
 .contacts__list {}
 .contacts__item {}
-.contacts__link {}
-
-.nav__link:hover,
-.nav__link:focus,
-.contacts__link:hover,
+.contacts__link {
+  color: #434455;
+}
+.contacts__link:hover {
+  color: #404bbf;
+}
 .contacts__link:focus {
   color: #404bbf;
 }
-
 
 /* Main */
 .main {}
@@ -120,6 +126,7 @@ a {
 }
 .hero__button {
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
@@ -127,14 +134,16 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.hero__button:hover,
+.hero__button:hover {
+  background-color: #404bbf;
+}
 .hero__button:focus {
   background-color: #404bbf;
 }
 
 .benefits {}
 .benefits__title {
-  display: none;
+  /* display: none; */
 }
 .benefits__list {}
 .benefits__item {}
@@ -200,7 +209,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
