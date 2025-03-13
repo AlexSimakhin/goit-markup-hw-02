@@ -1,4 +1,4 @@
-*,
+/* *,
 ::before,
 ::after {
   box-sizing: border-box;
@@ -41,12 +41,7 @@ h5,
 h6,
 span {
   overflow-wrap: break-word;
-}
-
-a {
-  text-decoration: none;
-  font-style: normal;
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -54,6 +49,15 @@ body {
   background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
 }
 
 button,
@@ -71,7 +75,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -86,7 +90,9 @@ a {
   color: #2e2f42;
 }
 
-.contacts {}
+.contacts {
+  font-style: normal;
+}
 .contacts__list {}
 .contacts__item {}
 .contacts__link {}
@@ -94,7 +100,7 @@ a {
 .nav__link:hover,
 .nav__link:focus,
 .contacts__link:hover,
-.contacts__link-link:focus {
+.contacts__link:focus {
   color: #404bbf;
 }
 
@@ -107,7 +113,7 @@ a {
 .hero__title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
